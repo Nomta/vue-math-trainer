@@ -1,4 +1,4 @@
-# math-trainer
+# Math-trainer
 
 ## Project setup
 ```

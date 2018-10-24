@@ -1,0 +1,51 @@
+.alert {
+    margin: 1.25rem auto;
+}
+
+.alert h3 {
+    max-width: 15em;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem;
+}
+
+.btn {
+    margin: 0.5em auto;
+}
+
+.container {
+    padding: 2rem 0;
+}
+
+.progress {
+    margin: 1.25rem auto;
+}
+
+.progress-bar {
+    transition: width 0.8s;
+}
+
+.flip-enter,
+.flip-leave-to {
+    transform: rotateX(90deg);
+}
+
+.flip-enter-active,
+.flip-leave-active {
+    transition: transform 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+    .buttons {
+        flex-wrap: wrap;
+    }
+    .btn:nth-last-child(6):first-child,
+    .btn:nth-last-child(6):first-child~.btn {
+        flex-basis: 25.1%;
+    }
+}

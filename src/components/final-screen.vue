@@ -1,33 +1,15 @@
 <script>
+import AlertScreen from '@/components/alert-screen.vue'
 export default {
     name: 'final-screen',
-
-    props: {
-        success: Number,
-        errors: Number
-    },
-    
-    computed: {
-        done() {
-            return this.success * 2 > this.errors
-        },
-        message() {
-            return this.done ? 'Следующий уровень' : 'Повторить уровень'
-        }
-    },
-
-    methods: {
-        next() {
-            this.$emit('next', this.done)
-        }
+    components: {
+        AlertScreen
     }
 }
 </script>
 
 <template>
-    <div class="alert alert-info">
-        <h3> Правильных ответов: {{ success }} </h3>
-        <h3> Ошибок: {{ errors }} </h3>
-        <button class="btn btn-info" @click="next"> {{ message }} </button>
-    </div>
+    <alert-screen type="success" title="Поздравляем!">
+        <p class="h5 mx-auto">Вы прошли все уровни!</p>
+    </alert-screen>
 </template>
