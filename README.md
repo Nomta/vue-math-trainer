@@ -19,3 +19,6 @@ npm run build
 ```
 npm run lint
 ```
+
+## Demo
+Training for children aged 6 to 8 years: [Demo](./demo)
